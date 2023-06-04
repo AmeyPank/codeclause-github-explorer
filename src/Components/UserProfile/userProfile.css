@@ -10,7 +10,7 @@
     width: 90%;
     margin-top: 2rem;
     padding: 20px;
-
+    gap: 10px;
     color: white;
 }
 
@@ -27,13 +27,20 @@
     margin-bottom: 10px;
 }
 
+.profile-desc {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 img {
     box-sizing: border-box;
-    float: left;
+    float: right;
     width: 20%;
     border-radius: 10px;
     margin-bottom: 10px;
-    margin-top: 2rem;
+
     margin-right: 2rem;
 }
 

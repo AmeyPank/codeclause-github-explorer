@@ -10,10 +10,10 @@ const RepositoryList = () => {
 
     return (
         <div className='repoList'>
-            <h3>Repositories:</h3>
+            <h3>Repositories </h3>
             <ol className="repository-list">
                 {repositories.map((repo) => (
-                    <li key={repo.id}>{repo.name}</li>
+                    <li key={repo.id}><a href={repo.html_url}>{repo.name}</a></li>
                 ))}
             </ol>
         </div>

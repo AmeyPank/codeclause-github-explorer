@@ -34,7 +34,7 @@
     gap: 20px;
 }
 
-img {
+.card-body img {
     box-sizing: border-box;
     float: right;
     width: 20%;

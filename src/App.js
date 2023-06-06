@@ -6,16 +6,17 @@ import Loader from './Components/Loader/Loader';
 import UserProfile from './Components/UserProfile/UserProfile';
 // import RepositoryList from './Components/RepositoryList/RepositoryList';
 import './App.css'; // Import your CSS file
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
 
 const App = () => {
   return (
     <Provider store={store}>
- {/* Add a container div for styling */}
-        <SearchForm />
-        <Loader />
-        <UserProfile />
-        {/* <RepositoryList /> */}
-      
+      <Header />
+      <SearchForm />
+      <Loader />
+      <UserProfile />
+      <Footer />
     </Provider>
   );
 };

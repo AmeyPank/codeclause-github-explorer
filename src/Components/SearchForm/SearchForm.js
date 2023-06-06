@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserData } from '../../Redux/actions';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,20 +9,24 @@ import "./searchform.css"
 
 const SearchForm = () => {
     const [username, setUsername] = useState('');
+    const errorMessage = useSelector((state) => state.error);
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!username) {
-            toast.error('Username cannot be empty.');
+        if (!username || username.trim().length === 0) {
+            toast.error(`Search by username...`);
             return;
-        }else{
-            toast.success('Username is available.');
-
+        }
+        if(errorMessage){
+            toast.error(`${errorMessage} Search by username...`);
         }
 
         dispatch(fetchUserData(username));
+        setUsername(''); // Clear the input field after search
+        console.log(errorMessage);
+
     };
 
     return (

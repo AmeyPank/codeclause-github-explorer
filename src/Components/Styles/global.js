@@ -283,7 +283,7 @@ form button:hover {
 }
 
 .image-container img {
-    margin-top: 1rem;
+    margin-top: 5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -309,7 +309,7 @@ form button:hover {
     }
 
     .image-container img {
-        margin-top: 5rem;
+        margin-top: 8rem;
         width: 20%;
     }
 }

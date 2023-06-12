@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import "./repoList.css"
+
 const RepositoryList = () => {
     const repositories = useSelector((state) => state.repositories);
 

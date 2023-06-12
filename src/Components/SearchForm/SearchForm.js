@@ -5,7 +5,6 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import background from "./explore-github.png"
-import "./searchform.css"
 
 const SearchForm = () => {
     const [username, setUsername] = useState('');
@@ -19,7 +18,7 @@ const SearchForm = () => {
             toast.error(`Search by username...`);
             return;
         }
-        if(errorMessage){
+        if (errorMessage) {
             toast.error(`${errorMessage} Search by username...`);
         }
 
@@ -51,6 +50,7 @@ const SearchForm = () => {
                 <button className="search-button" type="submit">Search</button>
             </form>
             <ToastContainer />
+
         </div>
     );
 };

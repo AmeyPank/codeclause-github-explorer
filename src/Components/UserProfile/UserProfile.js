@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import "./userProfile.css"
+
 import RepositoryList from '../RepositoryList/RepositoryList';
 const UserProfile = () => {
     const user = useSelector((state) => state.user);
@@ -15,7 +15,7 @@ const UserProfile = () => {
                 <div className="card-body">
                     <img src={user.avatar_url} alt="Profile" />
                     <div className='profile-desc'>
-                        <h2>{user.name}</h2>
+                        <h2>Name : {user.name}</h2>
                         <p>Repositories: {user.public_repos}</p>
                         <p>Followers: {user.followers}</p>
                         <p>Location: {user.location}</p>

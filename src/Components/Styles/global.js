@@ -17,6 +17,9 @@ body{
     width: 100%;
 
 }
+.canvas{
+    height:100vh
+}
 
 /* footer.css */
 
@@ -27,6 +30,8 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
+     position: relative; /* Add this line */
+    z-index: 2; /* Add this line */
     /* margin-top: 5rem; */
 }
 
@@ -287,7 +292,7 @@ form button:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 180px;
     opacity: 0.8;
     /* Adjust the opacity value as needed */
 }
@@ -348,18 +353,19 @@ form button:hover {
 
 // userProfile
 
-
 .details-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
     margin-top: 2rem;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     gap: 20px;
     color: white;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
 }
 
 .detail-card {

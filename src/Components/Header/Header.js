@@ -29,10 +29,10 @@ const Header = () => {
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <a href="https://bento.me/amey">About</a>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <a href="https://bento.me/amey">Contact</a>
                     </li>
                     <li>
                         <div className="themes">

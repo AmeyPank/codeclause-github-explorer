@@ -238,18 +238,19 @@ form input {
     width: 30rem;
     height: 2.5rem;
     padding-left: 30px;
-    background-color: ${({ theme }) => theme.title};
-
+    background-color: ${({ theme }) => theme.typeBoxText};
 }
 
 form input:hover {
-    background: ${({ theme }) => theme.background};
-
+    color:  ${({ theme }) => theme.typeBoxText};
+    background-color: ${({ theme }) => theme.background};
+    
 }
 
 form input:focus {
     outline: 2px solid ${({ theme }) => theme.title};
 }
+
 
 form button {
     color: #727272;

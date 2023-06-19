@@ -39,7 +39,7 @@ const SearchForm = () => {
                     <input
                         className="search-input"
                         type="text"
-                        placeholder="Enter Github username..."
+                        placeholder="Type username..."
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                     />

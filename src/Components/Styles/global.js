@@ -6,6 +6,11 @@ export const GlobalStyle = createGlobalStyle`
 *{
     box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body{
     background:${({ theme }) => theme.background};
@@ -18,7 +23,8 @@ body{
 
 }
 .canvas{
-    height:100vh
+    min-height:100%
+padding-bottom:20px
 }
 
 /* footer.css */
@@ -26,13 +32,11 @@ body{
 .footer-container {
     padding: 4px 0;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    margin-bottom:0;
      position: relative; /* Add this line */
     z-index: 2; /* Add this line */
-    /* margin-top: 5rem; */
+
 }
 
 .footer-content {
@@ -284,6 +288,7 @@ form button:hover {
 .searchBar-container {
     display: flex;
     flex-direction: column;
+    height: 90vh;
     align-items: center;
 }
 
